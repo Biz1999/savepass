@@ -39,7 +39,7 @@ export function Home() {
   }
 
   function handleFilterLoginData() {
-    if (searchText === "") return;
+    if (searchText.trim() === "") return;
     const filteredData = data
       .filter(password => (
         password.service_name.includes(searchText)
